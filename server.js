@@ -1,14 +1,17 @@
-const express = require("express")
-const path = require("path")
+const express = require("express");
+const app = express();
+const path = require("path");
 
-const app = express()
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-app.use(express.static("public"))
+// cho phép load css và ảnh
+app.use(express.static("views"));
 
-app.get("/", (req,res)=>{
-    res.sendFile(path.join(__dirname,"public/index.html"))
-})
+app.get("/", (req, res) => {
+    res.render("index");
+});
 
-app.listen(3000,()=>{
-    console.log("Server running at http://localhost:3000")
-})
+app.listen(3000, () => {
+    console.log("Server running at http://localhost:3000");
+});

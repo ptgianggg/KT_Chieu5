@@ -45,7 +45,7 @@ body {
 
 .menu li a {
     text-decoration: none;
-    color: #a14e7c;
+    color: #333;
     padding: 12px 18px;
     display: block;
     border-radius: 4px;
@@ -58,9 +58,8 @@ body {
 }
 
 .menu li.line {
-    width: 2px;
-    height: 24px;
-    background: #e5b6d2;
+    display: flex;
+    align-items: center;
     margin: 0 8px;
 }
 
