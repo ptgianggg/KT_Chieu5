@@ -182,3 +182,32 @@ body {
     margin-top: 40px;
     font-size: 14px;
 }
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+#footer ul li {
+    display: inline;
+}
+
+#footer ul li a {
+    color: #a14e7c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#footer ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer p {
+    margin: 4px 0;
+    color: #888;
+    font-size: 13px;
+}
